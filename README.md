@@ -69,7 +69,7 @@ A dataclass describing a single note in the performance.
 
 Includes midi_io, csv_io, main_rhythm, validation, cli.
 
-## 6. Rules Explained in Simple Language (Super Detailed Beethoven-Style)
+## 6. Rules Explained 
 
 ------------------------------------------------------------
 RULE 1 — GROUP NOTES BY THEIR ONSET TIME
