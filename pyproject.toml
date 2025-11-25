@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-segmentation-toolkit-rule-based-beethoven"
+version = "0.1.0"
+description = "Rule-based main rhythm extraction for classical piano MIDI, focusing on Beethoven-style textures."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Jingwen Feng", email = "fengjingwen888cn@gmail.com" },
+]
+dependencies = [
+  "mido>=1.2,<2.0",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+
+[project.urls]
+Homepage = "https://github.com/https://github.com/jingwenfeng/music_segmentation_toolkit_rule_based_beethoven"
+
+[project.scripts]
+beethoven-main-rhythm = "music_segmentation_toolkit_rule_based_beethoven.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
